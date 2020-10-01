@@ -127,6 +127,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "login-criptografado"
+    }
+  },
+  "defaultProject": "login-criptografado",
+  "cli": {
+    "analytics": "2d614fab-5c4c-43eb-8455-491e6a877309"
+  }
 }

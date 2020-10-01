@@ -1,13 +1,16 @@
 import { Component, OnChanges, Input, SimpleChanges } from '@angular/core';
 
+import { LoginService } from './../service/login.service';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent implements OnChanges {
+export class LoginComponent implements OnChanges{
 
-  constructor() { }
+
+
 
   @Input() usuario = '';
   @Input() senha = '';
@@ -21,17 +24,8 @@ export class LoginComponent implements OnChanges {
 
 
 
-  logar(){
-
-  }
-
-
-
-
-
-
-  verificarUsuarioESenha(event: any){  
-    /*console.log('Usuario' + this.usuario.length);
+  verificarUsuarioESenha(event: any){
+    console.log('Usuario' + this.usuario.length);
     console.log('Senha' + this.senha.length);
 
     if (this.usuario.length > 0 && this.senha.length > 0){
@@ -43,7 +37,19 @@ export class LoginComponent implements OnChanges {
       this.liberar = true;
     }
     console.log(this.liberar);
-  */
+
   }
+
+  constructor(private loginService: LoginService) { }
+
+
+  logar(){
+
+    console.log(this.loginService.login());
+
+
+    //this.loginService.login().subscribe(dados => this.produtos = dados);
+  }
+
 
 }
