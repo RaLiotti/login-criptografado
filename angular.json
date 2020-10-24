@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "login-criptografado"
+    }
+  },
+  "defaultProject": "login-criptografado",
+  "cli": {
+    "analytics": "0945ff27-694f-4747-9982-f157cb243752"
+  }
 }
