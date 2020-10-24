@@ -131,6 +131,10 @@
   },
   "defaultProject": "login-criptografado",
   "cli": {
+<<<<<<< HEAD
     "analytics": "2d614fab-5c4c-43eb-8455-491e6a877309"
+=======
+    "analytics": "0945ff27-694f-4747-9982-f157cb243752"
+>>>>>>> master
   }
 }
