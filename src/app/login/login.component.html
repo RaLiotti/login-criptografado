@@ -1,14 +1,14 @@
 <div class="p-grid p-dir-col p-justify-between login">
     <div class="p-col">
         <h3 class="first">Usuario</h3>
-        <input type="text" [(ngModel)]="usuario" (change)="verificarUsuarioESenha($event)" pInputText>
+        <input type="text" [(ngModel)]="usuario" pInputText>
     </div>
     <div class="p-col">
         <h3 class="first">Senha</h3>
-        <input type="password" [(ngModel)]="senha" (change)="verificarUsuarioESenha($event)" pInputText>
+        <input type="password" [(ngModel)]="senha" pInputText>
     </div>
-    <div class="p-col">
-        <p-button label="Logar" (click)="logar()" [disabled]="liberar"></p-button>
+    <div class="p-col button-logar">
+        <p-button label="Logar" (click)="logar()" [disabled]="(usuario == undefined || usuario.length == 0) || (senha == undefined || senha.length == 0)"></p-button>
         <!-- <h3 class="first">Cadastre-se:</h3>
         <p-button label="Cadastrar"></p-button>
         -->
